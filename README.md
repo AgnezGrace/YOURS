@@ -11,11 +11,6 @@ YOURS is a Progressive Web App (PWA) designed to help you write, organize, and r
 * **PWA Enabled:** Install the app directly on your mobile or desktop device to write and read offline.
 * **Backup & Restore:** Export your entire library as a `.json` backup file and restore it anytime.
 
-## How to Use
-1. Download or clone this repository.
-2. Open the `index.html` file in any modern web browser.
-3. (Optional) To install it as an app (PWA) on your device, upload these files to any static hosting provider (such as GitHub Pages, Netlify, or Vercel) and open the link on your mobile or desktop browser.
-
 ## License and Terms of Use
 This project is distributed under a strict Proprietary License.
 
