@@ -2,6 +2,9 @@
 
 YOURS is a Progressive Web App (PWA) designed to help you write, organize, and read your personal novels or books directly in your browser. All your data is securely stored locally on your device.
 
+## Live Demo
+Access the hosted application here: **[https://agnezgrace.github.io/YOURS/]**
+
 ## Features
 * **Personal Bookshelf:** Organize and manage your books in an interactive grid view.
 * **Custom Book Covers:** Choose between default genre icons, external image URLs, or upload your own covers directly from your device.
