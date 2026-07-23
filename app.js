@@ -162,6 +162,22 @@ function init() {
     if (savedData) {
         state = JSON.parse(savedData);
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const sharedText = urlParams.get('share_text') || urlParams.get('text');
+    if (sharedText) {
+        setTimeout(() => {
+            if (state.books.length > 0 && state.activeBookId) {
+                const book = state.books.find(b => b.id === state.activeBookId);
+                if (book && book.chapters.length > 0) {
+                    const chapter = book.chapters.find(ch => ch.id === state.activeChapterId) || book.chapters[0];
+                    chapter.content = (chapter.content || '') + '<p>' + sharedText + '</p>';
+                    saveToLocalStorage();
+                    loadActiveChapter();
+                }
+            }
+        }, 500);
+    }
     
     if (!location.hash) {
         if (state.activeBookId) {

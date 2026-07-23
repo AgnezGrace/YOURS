@@ -1,7 +1,11 @@
 {
-  "name": "Yours",
+  "id": "/yours-novel-app",
+  "name": "Yours - Personal Library & Novel Studio",
   "short_name": "Yours",
+  "description": "A personal writing studio and digital bookshelf to write, manage, and read your novels offline.",
+  "categories": ["books", "productivity", "utilities"],
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#fdfbf7",
   "theme_color": "#1e130c",
@@ -10,12 +14,37 @@
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Create New Book",
+      "short_name": "New Book",
+      "description": "Create a new novel draft",
+      "url": "./index.html#/bookshelf",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "share_title",
+      "text": "share_text",
+      "url": "share_url"
+    }
+  }
 }
